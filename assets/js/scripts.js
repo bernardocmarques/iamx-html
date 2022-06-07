@@ -29,7 +29,8 @@ jQuery(function ($) {
      * Preloader
     /* ---------------------------------------------- */
 
-    $(window).document(function() {
+
+    $(window).ready(() => {
         $('#pre-status').fadeOut();
         $('#tt-preloader').delay(350).fadeOut('slow');
     });
@@ -209,38 +210,6 @@ jQuery(function ($) {
 
 
     // -------------------------------------------------------------
-    // Fit Vids
-    // -------------------------------------------------------------
-    (function () {
-        $(".video-container").fitVids();
-    }());
-
-
-
-    // -------------------------------------------------------------
-    // Video auto play
-    // -------------------------------------------------------------
-    (function () {
-    
-    /* Vimeo API: http://developer.vimeo.com/player/js-api */
-    
-        var iframe = document.getElementById('nofocusvideo');
-        // $f == Froogaloop
-        var player = $f(iframe);
-
-        $('.modal').on('hidden.bs.modal', function () {
-        player.api('pause');
-        })
-
-        $('.modal').on('shown.bs.modal', function () {
-        player.api('play');
-        })
-    }());
-
-
-
-
-    // -------------------------------------------------------------
     // STELLAR FOR BACKGROUND SCROLLING
     // -------------------------------------------------------------
 
@@ -271,76 +240,6 @@ jQuery(function ($) {
         }).init();
 
     }());
-
-    // -------------------------------------------------------------
-    // Google Map
-    // -------------------------------------------------------------
-
-    (function () {
-        var myLatlng = new google.maps.LatLng(41.372641, -74.687387);
-
-            var styles = [
-                {
-                    featureType: "landscape",
-                    stylers: [
-                        { color: '#f7f7f7' }
-                    ]
-                },{
-                    featureType: "natural",
-                    stylers: [
-                        { hue: '#00ffe6' }
-                    ]
-                },{
-                    featureType: "road",
-                    stylers: [
-                        { hue: '#fff' },
-                        { saturation: -70 }
-                    ]
-                },{
-                    featureType: "building",
-                    elementType: "labels",
-                    stylers: [
-                        { hue: '' }
-                    ]
-                },{
-                    featureType: "poi", //points of interest
-                    stylers: [
-                        { hue: '' }
-                    ]
-                }
-            ];
-
-            var mapOptions = {
-                zoom: 15,
-                scrollwheel: false,
-                center: myLatlng,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                disableDefaultUI: true,
-                styles: styles
-            }
-            var map = new google.maps.Map(document.getElementById('mapCanvas'), mapOptions);
-
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map,
-                animation: google.maps.Animation.DROP,
-                title: 'Hello World!'
-            });
-
-            var contentString = '' +
-                    '' +
-                    '';
-
-            var infowindow = new google.maps.InfoWindow({
-                content: contentString
-            });
-
-            google.maps.event.addListener(marker, 'click', function () {
-                infowindow.open(map, marker);
-            });
-
-    }());
-
 
 });
 
