@@ -30,8 +30,8 @@
 
 /* CSS Reset */
 *{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 
 .noselect {
@@ -56,6 +56,11 @@ body{
     -webkit-overflow-scrolling: touch;
     -webkit-font-smoothing: antialiased !important;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 
 body, html{
     overflow-x:hidden;
@@ -1108,6 +1113,18 @@ Resume Timeline
 .portfolio .tt-overlay {
     height: 14.5em;
     cursor: pointer;
+
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .tt-overlay i {
+    color: white;
+    font-size: 2em;
+    opacity: 0.5;
+    margin-top: -45px;
 }
 
 .portfolio img {
@@ -1487,6 +1504,10 @@ Icon for all respective meta
     margin-bottom: 40px;
 }
 
+.contact-form input, .contact-form textarea {
+    border-radius: 4px;
+}
+
 .contact-form textarea.form-control {
     height: 115px;
 }
@@ -1818,15 +1839,49 @@ Icon for all respective meta
 }
 
 .modal-body {
-    padding: 2em;
-
-
+    margin: 1.5em;
 }
 
-.modal-body .work-modal-img {
-    margin-bottom: 3em;
+.modal-body h3 {
+    margin-bottom: 1em;
 }
 
 .modal-body .btn {
-    margin-top: 2em;
+    margin-top: 1.5em;
+}
+
+.modal-body .btn i {
+    margin-right: 0.3em;
+}
+
+.modal-header {
+    padding: 0;
+}
+
+.modal-header .close {
+    position: absolute;
+    right: 1em;
+    top: 0.8em;
+    z-index: 5;
+    opacity: 0.4;
+}
+
+.modal .border-up {
+    border-radius: 1.5em 1.5em 0 0;
+}
+
+body.modal-open {
+    padding: 0 !important;
+}
+
+.modal.modal-open {
+    padding: 0 !important;
+}
+
+.modal .border-down {
+    border-radius: 0 0 1.5em 1.5em;
+}
+
+.modal .border-up-down {
+    border-radius: 1.5em;
 }

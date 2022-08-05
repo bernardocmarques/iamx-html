@@ -6,7 +6,6 @@ Author URL: farukahmed.com
 
 /*
     = Preloader
-    = Animated scrolling / Scroll Up
     = Full Screen Slider
     = Sticky Menu
     = Back To Top
@@ -35,22 +34,6 @@ jQuery(function ($) {
         $('#tt-preloader').delay(350).fadeOut('slow');
     });
 
-
-
-
-    // -------------------------------------------------------------
-    // Animated scrolling / Scroll Up
-    // -------------------------------------------------------------
-
-    (function () {
-        $('a[href*=#]').bind("click", function(e){
-            var anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $(anchor.attr('href')).offset().top
-            }, 1000);
-            e.preventDefault();
-        });
-    }());
 
 
 
@@ -216,7 +199,7 @@ jQuery(function ($) {
     $(window).load(function() {
 
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-         
+
         }else {
             $.stellar({
                 horizontalScrolling: false,
@@ -240,6 +223,7 @@ jQuery(function ($) {
         }).init();
 
     }());
+
 
 });
 
