@@ -1142,7 +1142,8 @@ Resume Timeline
 }
 
 .portfolio img {
-    object-fit: cover;
+    /*object-fit: cover;*/
+    object-fit: scale-down;
     height: 14.5em;
 }
 
