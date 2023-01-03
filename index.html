@@ -58,7 +58,7 @@
     <div class="intro">
         <div class="intro-sub">I am Bernardo Marques</div>
         <h1>Computer <span>Engineer</span></h1>
-        <p>Computer Engineer with a Master's in Computer Science and Engineering at <br> Instituto Superior Técnico in Lisbon,
+        <p>Software Engineer with a Master's in Computer Science and Engineering at <br> Instituto Superior Técnico in Lisbon,
             Portugal.</p>
 
         <div class="social-icons">
@@ -73,9 +73,9 @@
         </div> <!-- /.social-icons -->
     </div>
 
-    <div class="mouse-icon">
+    <a class="mouse-icon" href="#about">
         <div class="wheel"></div>
-    </div>
+    </a>
 </section><!-- End Home Section -->
 
 
@@ -99,7 +99,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#resume">Resume</a></li>
-                    <li><a href="#works">Works</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -130,24 +130,24 @@
                 </div>
             </div> <!-- col-md-4 -->
 
-            <div class="col-md-8 col-md-pull-4">
+            <div class="col-md-8 col-md-pull-4 mx-md-0 mx-3">
                 <div class="short-info wow fadeInUp">
                     <h3>Who Am I?</h3>
                     <p>
-                        I am a Computer Engineer with a Master's in Computer Science and Engineering at Instituto
+                        I am a Software Engineer with a Master's in Computer Science and Engineering at Instituto
                         Superior Técnico in Lisbon, Portugal.
-                        I am passionate about technology and problem-solving. I love the idea of being able to solve a
+                        I am passionate about technology and problem solving. I love the idea of being able to solve a
                         problem and create something useful through coding.
-                        I see myself as a full-stack developer, with a greater focus on the backend side, but I'm also
+                        I see myself as a software developer, with a greater focus on the back-end side, but I'm also
                         capable of creating simple and responsive user interfaces.
                         I enjoy the process of transforming a client's idea into something tangible and real.
-                        I'm specialized in Distributed Systems and have some experience creating client-server
-                        applications, both for web and mobile devices.
+                        I'm specialized in Distributed Systems and have experience creating client-server applications,
+                        both for web and mobile devices.
                     </p>
 
                     <ul class="list-check">
                         <li>Problem Solving</li>
-                        <li>Team-work driven</li>
+                        <li>Teamwork driven</li>
                         <li>Responsive UI</li>
                         <li>Web & mobile development</li>
                         <li>Client-Server Applications</li>
@@ -157,7 +157,7 @@
 
 
                 <div class="download-button">
-                    <a class="btn btn-info btn-lg" href="#contact"><i class="fa fa-paper-plane"></i>Send me message</a>
+                    <a class="btn btn-info btn-lg" href="#contact"><i class="fa fa-paper-plane"></i>Send me a message</a>
                     <a class="btn btn-primary btn-lg" href="assets/pdfs/CV%20Resume.pdf"
                        target="_blank"><i class="fa fa-download"></i>download my cv</a>
 
@@ -224,7 +224,7 @@
     <div class="container">
         <h2 class="section-title wow fadeInUp">Resume</h2>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 mx-md-0 mx-4">
                 <div class="resume-title">
                     <h3>Education</h3>
                 </div>
@@ -325,23 +325,23 @@
 </section><!-- End Resume Section -->
 
 
-<!-- Works Section -->
-<section class="works-section section-padding" id="works">
+<!-- Projects Section -->
+<section class="works-section section-padding" id="projects">
     <div class="container">
-        <h2 class="section-title wow fadeInUp">Works</h2>
+        <h2 class="section-title wow fadeInUp">Projects</h2>
 
         <ul class="list-inline" id="filter">
             <li><a class="active" data-group="all">All</a></li>
-            <li><a data-group="perosnal">Personal</a></li>
+            <li><a data-group="personal">Personal</a></li>
             <li><a data-group="work">Work</a></li>
             <li><a data-group="university">University</a></li>
             <li><a data-group="web">Web</a></li>
             <li><a data-group="android">Android</a></li>
             <li><a data-group="iot">IoT</a></li>
         </ul>
-        <div class="row">
+        <div class="row mx-md-0 mx-5">
             <div id="grid">
-                <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "perosnal", "web"]'>
+                <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "personal", "web"]'>
                     <div class="portfolio-bg">
                         <div class="portfolio">
                             <div class="tt-overlay" data-target="#colmeiaModal" data-toggle="modal">
@@ -390,6 +390,21 @@
                     </div><!-- /.portfolio-bg -->
                 </div><!-- /.portfolio-item -->
 
+                <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "work", "web"]'>
+                    <div class="portfolio-bg">
+                        <div class="portfolio">
+                            <div class="tt-overlay" data-target="#pharmacyAppModal" data-toggle="modal">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                            <img alt="image" src="assets/images/works/pharmacyApp/1.png">
+
+                            <div class="portfolio-info">
+                                <h3 class="noselect" data-target="#pharmacyAppModal" data-toggle="modal">Pharmacy - Web App</h3>
+                            </div><!-- /.portfolio-info -->
+                        </div><!-- /.portfolio -->
+                    </div><!-- /.portfolio-bg -->
+                </div><!-- /.portfolio-item -->
+
                 <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "university", "android"]'>
                     <div class="portfolio-bg">
                         <div class="portfolio">
@@ -422,41 +437,41 @@
                     </div><!-- /.portfolio-bg -->
                 </div><!-- /.portfolio-item -->
 
+                <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "personal", "web"]'>
+                    <div class="portfolio-bg">
+                        <div class="portfolio">
+                            <div class="tt-overlay" data-target="#budgetModal" data-toggle="modal">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                            <img alt="image" src="assets/images/works/budget/1.png">
+
+                            <div class="portfolio-info">
+                                <h3 class="noselect" data-target="#budgetModal" data-toggle="modal">Budget Creator - Web App</h3>
+                            </div><!-- /.portfolio-info -->
+                        </div><!-- /.portfolio -->
+                    </div><!-- /.portfolio-bg -->
+                </div><!-- /.portfolio-item -->
+
             </div><!-- /#grid -->
         </div><!-- /.row -->
     </div><!-- /.container -->
 </section><!-- End Works Section -->
 
 
-<!-- Facts Section -->
-<section class="facts-section text-center" data-stellar-background-ratio="0.2" data-stellar-vertical-offset="50"
+<!-- Languages Section -->
+<section class="languages-section text-center" data-stellar-background-ratio="0.2" data-stellar-vertical-offset="50"
          id="facts">
     <div class="tt-overlay-bg">
         <div class="container">
+            <h2 class="section-title wow fadeInUp">Languages</h2>
+
             <div class="row">
-                <div class="col-md-12">
-                    <div class="count-wrap">
-                        <div class="col-sm-3 col-xs-6">
-                            <i class="fa fa-flask"></i>
-                            <h3 class="timer">7</h3>
-                            <p>Years of Experience</p>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <i class="fa fa-thumbs-up"></i>
-                            <h3 class="timer">651</h3>
-                            <p>Projects Done</p>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <i class="fa fa-users"></i>
-                            <h3 class="timer">251</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <i class="fa fa-trophy"></i>
-                            <h3 class="timer">5</h3>
-                            <p>Awards Won</p>
-                        </div>
-                    </div><!-- /count-wrap -->
+                <div class="col-md-6 col-xs-12">
+                    <h3>Portuguese</h3><p>Native</p>
+                </div><!-- /.col-md-12 -->
+
+                <div class="col-md-6 col-xs-12 mt-5 mt-md-0">
+                    <h3>English</h3><p>Fluent (Level C1)</p>
                 </div><!-- /.col-md-12 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
@@ -510,7 +525,7 @@
                                       rows="5"></textarea>
                         </div>
 
-                        <button class="btn btn-primary" name="submit" type="submit">Send Message</button>
+                        <button id="contact_btn" class="btn btn-primary" name="submit" type="submit"><i id="contact_btn_spinner" class="d-none fa fa-spinner spinning mr-3"></i>Send Message</button>
                     </form>
                 </div>
             </div><!-- /.col-md-6 -->
@@ -761,7 +776,7 @@
                 <h3>IoT Smart Door Lock with Wireless Key Sharing for Tourism Applications</h3>
 
                 <p class="text-justify">
-                    This project was developed as a dissection to obtain a Master's in Computer Science and Engineering
+                    This project was developed as a dissertation to obtain a Master's in Computer Science and Engineering
                     at Instituto Superior Técnico, Lisbon.
                     <br>
                     In this project it was developed a Smart Door Lock system, that can be remotely controlled using a
@@ -959,6 +974,161 @@
     </div>
 </div>
 
+<!-- budget Modal -->
+<div aria-hidden="true" aria-labelledby="budgetModalLabel" class="modal fade" id="budgetModal" role="dialog"
+     tabindex="-1">
+    <div class="modal-dialog modal-lg border-up-down" role="document">
+        <div class="modal-content border-up-down">
+            <div class="modal-header border-up">
+
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <i class="fa fa-close"></i>
+                    <!--                    <span aria-hidden="true">&times;</span>-->
+                </button>
+
+                <div class="carousel slide border-up" data-ride="carousel" id="budgetCarousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#budgetCarousel"></li>
+                        <li data-slide-to="1" data-target="#budgetCarousel"></li>
+                        <li data-slide-to="2" data-target="#budgetCarousel"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner border-up">
+
+                        <div class="item active">
+                            <img alt="" class="border-up" src="assets/images/works/budget/1.png">
+                        </div>
+
+                        <div class="item">
+                            <img alt="" class="border-up" src="assets/images/works/budget/2.png">
+                        </div>
+
+                        <div class="item active">
+                            <img alt="" class="border-up" src="assets/images/works/budget/3.png">
+                        </div>
+
+                        <div class="item">
+                            <img alt="" class="border-up" src="assets/images/works/budget/4.png">
+                        </div>
+
+                        <div class="item">
+                            <img alt="" class="border-up" src="assets/images/works/budget/5.png">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" data-slide="prev" href="#budgetCarousel"
+                       style="border-radius: 1em 0 0 0;">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control border-up" data-slide="next" href="#budgetCarousel"
+                       style="border-radius: 0 1em 0 0;">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="modal-body border-down">
+
+                <h3>Budget Creator - Web App</h3>
+
+                <p class="text-justify">
+                    A simple Web App made as a personal project that enables users to quickly and simply create and
+                    manage client budgets.
+                    <br>
+                    With this Budget Creator, the user can manage information about his clients and each project, easily
+                    creating and exporting budgets as PDFs.
+                    <br>
+                    This Web App has a simple dashboard that summarizes some information about the user's projects, like
+                    total earnings, client and project statistics and earning overtime visualizations.
+                </p>
+
+                <a class="btn btn-primary btn-lg mr-5" href="https://github.com/bernardocmarques/bcm-budget-creator"
+                   target="_blank"><i class="fa fa-github"></i> GitHub</a>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- pharmacyApp Modal -->
+<div aria-hidden="true" aria-labelledby="pharmacyAppModalLabel" class="modal fade" id="pharmacyAppModal" role="dialog"
+     tabindex="-1">
+    <div class="modal-dialog modal-lg border-up-down" role="document">
+        <div class="modal-content border-up-down">
+            <div class="modal-header border-up">
+
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <i class="fa fa-close"></i>
+                    <!--                    <span aria-hidden="true">&times;</span>-->
+                </button>
+
+                <div class="carousel slide border-up" data-ride="carousel" id="pharmacyAppCarousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#pharmacyAppCarousel"></li>
+                        <li data-slide-to="1" data-target="#pharmacyAppCarousel"></li>
+                        <li data-slide-to="2" data-target="#pharmacyAppCarousel"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner border-up">
+
+                        <div class="item active">
+                            <img alt="" class="border-up" src="assets/images/works/pharmacyApp/1.png">
+                        </div>
+
+                        <div class="item">
+                            <img alt="" class="border-up" src="assets/images/works/pharmacyApp/2.png">
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" data-slide="prev" href="#pharmacyAppCarousel"
+                       style="border-radius: 1em 0 0 0;">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control border-up" data-slide="next" href="#pharmacyAppCarousel"
+                       style="border-radius: 0 1em 0 0;">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="modal-body border-down">
+
+                <h3>Pharmacy - Web App</h3>
+
+                <p class="text-justify">
+                    This was a freelancer project for a UK pharmacy to create a Web App to fully manage and bring to the
+                    digital space all the paper trail tasks in a pharmacy.
+                    <br>
+                    In this app, it is possible to manage every day-to-day task of a pharmacy, like managing drug
+                    prescriptions, controlling drug expiring dates, logging alerts and near-miss incidents, managing
+                    invoices, and many more.
+                    <br>
+                    This project was tailored to the customer's needs and was continuously developed feature per feature
+                    while in production.
+                </p>
+
+                <a class="btn btn-primary btn-lg mr-5" href="https://github.com/bernardocmarques/bcm-budget-creator"
+                   target="_blank"><i class="fa fa-github"></i> GitHub</a>
+
+
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 

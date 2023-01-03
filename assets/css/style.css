@@ -318,12 +318,7 @@ ul.list-check li::before {
 
 
 
-/* === HOME === */
-@media (max-width : 640px) {
-    .tt-fullHeight{
-        height: 560px !important;
-    }
-}
+
 
 
 #home {
@@ -615,7 +610,7 @@ SOCIAL ICON
     z-index: -1;
 
     border-radius: 50%;
-    border: 0.25em solid #2c3e50;
+    border: 0.5em solid #373737;
 }
 
 /*@media(min-width:992px) {*/
@@ -1012,6 +1007,8 @@ Resume Timeline
 
 
 
+
+
 /* progress-bar */
 
 .skill-progress {
@@ -1317,12 +1314,18 @@ Resume Timeline
 
 
 /* === Facts Section === */
-.facts-section {
+.languages-section {
     background: url(../../assets/images/counter-bg.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     color: #fff;  
 }
+
+.languages-section .section-title{
+    color: #fff;
+    margin-bottom: 110px;
+}
+
 
 .tt-overlay-bg {
     background: rgba(26, 30, 35, 0.85);
@@ -1514,9 +1517,6 @@ Icon for all respective meta
 .contact-section strong {
     display: block;
     text-transform: uppercase;
-}
-.contact-form strong {
-    margin-bottom: 40px;
 }
 
 .contact-form input, .contact-form textarea {
@@ -1899,4 +1899,25 @@ body.modal-open {
 
 .modal .border-up-down {
     border-radius: 1.5em;
+}
+
+
+.fa.spinning {
+    animation: spin 1.25s infinite linear;
+    -webkit-animation: spin2 1.25s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg); }
+    to { transform: scale(1) rotate(360deg); }
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+
+.carousel-inner > .item > img {
+    object-fit: scale-down;
 }

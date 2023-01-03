@@ -225,6 +225,35 @@ jQuery(function ($) {
     }());
 
 
+
+    // -------------------------------------------------------------
+    // Carousel
+    // -------------------------------------------------------------
+
+    let max_ratio = -1;
+
+    $(document).on('show.bs.modal', '.modal', function (e) {
+        let imagesHTMLs = e.target.getElementsByTagName('img');
+
+        max_ratio = -1;
+        for (let img of imagesHTMLs) {
+            let ratio = img.height/img.width
+            if (ratio >= max_ratio) {
+                max_ratio = ratio;
+            }
+        }
+    });
+
+    $(document).on('shown.bs.modal', '.modal', function (e) {
+        let imagesHTMLs = e.target.getElementsByTagName('img');
+        let width = e.target.lastElementChild.lastElementChild.clientWidth;
+
+        for (let img of imagesHTMLs) {
+            img.style.height = width * max_ratio + "px";
+        }
+
+    });
+
 });
 
 
